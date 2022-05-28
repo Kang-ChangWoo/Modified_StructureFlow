@@ -11,6 +11,8 @@ def main(mode=None):
         mode : train, test, eval, reads from config file if not specified
     """
 
+    print("cw_mode",mode)
+    
     config = load_config(mode)
     config.MODE = mode
     os.environ['CUDA_VISIBLE_DEVICES'] = ''.join(str(e) for e in config.GPU)
@@ -47,7 +49,6 @@ def load_config(mode=None):
     parser.add_argument("--resume_all", action="store_true", help='load model from checkpoints')
     parser.add_argument("--remove_log", action="store_true", help='remove previous tensorboard log files')
 
-
     if mode == 'test':
         parser.add_argument('--input', type=str, help='path to the input image files')
         parser.add_argument('--mask', type=str, help='path to the mask files')
@@ -77,7 +78,7 @@ def perpare_sub_floder(output_path):
     if not os.path.exists(checkpoints_dir):
         print("Creating directory: {}".format(checkpoints_dir))
         os.makedirs(checkpoints_dir) 
-    
-
+        
+        
 if __name__ == "__main__":
     main()
