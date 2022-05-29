@@ -44,14 +44,17 @@ class StructureFlow():
             self.stage_name='joint_train'
 
     def train(self):
+        
+        print("cw_test", self.config.DATA_TRAIN_GT, self.config.DATA_TRAIN_STRUCTURE)
+        print(self.config.DATA_MASK_FILE)
         train_writer = self.obtain_log(self.config)
         train_dataset = Dataset(self.config.DATA_TRAIN_GT, self.config.DATA_TRAIN_STRUCTURE, 
-                                self.config, self.config.DATA_MASK_FILE)
+                                self.config ) #self.config.DATA_MASK_FILE
         train_loader = DataLoader(dataset=train_dataset, batch_size=self.config.TRAIN_BATCH_SIZE, 
                                   shuffle=True, drop_last=True, num_workers=8)  
 
         val_dataset = Dataset(self.config.DATA_VAL_GT, self.config.DATA_VAL_STRUCTURE, 
-                              self.config, self.config.DATA_MASK_FILE)
+                              self.config) #  self.config.DATA_MASK_FILE
         sample_iterator = val_dataset.create_iterator(self.config.SAMPLE_SIZE)
 
 
@@ -65,7 +68,7 @@ class StructureFlow():
         while(keep_training):
             epoch += 1
             print('\n\nTraining epoch: %d' % epoch)
-
+ 
             progbar = Progbar(total, width=20, stateful_metrics=['epoch', 'iter'])
 
             for items in train_loader:
@@ -185,6 +188,7 @@ class StructureFlow():
 
 
     def test(self):
+        print("!")
         self.flow_model.eval()
 
         model = self.config.MODEL
