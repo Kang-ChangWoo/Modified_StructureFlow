@@ -27,6 +27,7 @@
    ```
 
 2. Build Gaussian Sampling CUDA package 
+   (c++ 버전은 기존 c++ 11에서 **c++ 14**로 변경했으며, GPU architecture는 **sm_80, sm_86** 으로 설정했습니다.)
 
    ```bash
    cd ./StructureFlow/resample2d_package
