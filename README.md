@@ -11,9 +11,9 @@
 
 ### Requirements
 
-1. ** Pytorch 1.10.1 ** (modified from Pytorch >= 1.0)
-2. ** Python 3.9.5 ** (modified from Python 3)
-3. ** NVIDIA GPU + CUDA 11.3 ** (modified from NVIDIA GPU + CUDA 9.0)
+1. **Pytorch 1.10.1** (modified from Pytorch >= 1.0)
+2. **Python 3.9.5** (modified from Python 3)
+3. **NVIDIA GPU + CUDA 11.3** (modified from NVIDIA GPU + CUDA 9.0)
 4. Tensorboard
 5. Matlab
 6. 그 외 버전에 영향 없는 라이브러리는 필요 시 설치해주시면 됩니다.
