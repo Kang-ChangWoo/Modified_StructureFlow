@@ -79,6 +79,8 @@ class Dataset(data.Dataset):
 
     def load_item(self, index):
         gt_path = self.gt_image_files[index]
+        print(len(self.structure_image_files))
+        print(index)
         structure_path = self.structure_image_files[index]
         gt_image = loader(gt_path)
         structure_image = loader(structure_path)
@@ -109,14 +111,25 @@ class Dataset(data.Dataset):
         elif self.mask_type == 'from_file':
             if self.transform_opt['random_load_mask']:
                 index = np.random.randint(0, len(self.mask_image_files))
-                mask = gray_loader(self.mask_image_files[index])
+                mask = gray_loader(self.mask_image_files[index]).convert("L")
+                #print("mask", mask)
+                #print("mask", mask.shape)
+                #print("mask", type(mask))
+                #mask = cv2.cvtColor(mask, cv2.COLOR_RGB2GRAY) #
+                
                 if random.random() > 0.5:
                     mask = transFunc.hflip(mask)
                 if random.random() > 0.5:
                     mask = transFunc.vflip(mask)  
             else:
-                mask = gray_loader(self.mask_image_files[index])
+                mask = gray_loader(self.mask_image_files[index]).convert("L")
+                #print("mask", mask)
+                #print("mask", mask.shape)
+                #print("mask", type(mask))
+                
+                
             mask = transFunc.resize(mask, size=image_shape) 
+            #mask = cv2.cvtColor(mask, cv2.COLOR_RGB2GRAY) #
             mask = transFunc.to_tensor(mask)    
             mask = (mask > 0).float()
             return mask

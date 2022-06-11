@@ -38,7 +38,7 @@ DATA_TRAIN_SIZE: 256          # image size for training
 DATA_TEST_SIZE: False         # image size for testing (False for never resize)
 DATA_FLIP: False              # filp image or not when training 
 DATA_CROP: FALSE #[537,537]   # crop size when training (False for never crop )
-#DATA_MASK_TYPE: from_file     # mask type (random_bbox|random_free_form|from_file)
+DATA_MASK_TYPE: from_file     # mask type (random_bbox|random_free_form|from_file)
 DATA_MASK_TYPE: random_free_form
 DATA_RANDOM_BBOX_SETTING:     # parameters for random_bbox
   random_size: False          # random hole size according to shape [0.4*shape shape]
@@ -50,21 +50,22 @@ DATA_RANDOM_FF_SETTING:       #parameters for random_free_form
   ma: 4.0
   ml: 40
   mbw: 10
-DATA_MASK_FILE: ./txt/irregular_mask.txt #parameters for from_file
+  
+DATA_MASK_FILE: /root/dev/Modified_StructureFlow/flist/masks.flist #parameters for from_file
 
 # DATA_TRAIN_GT: ./txt/places_gt_train.txt
 # DATA_TRAIN_STRUCTURE: ./txt/places_structure_train.txt
 
-DATA_TRAIN_GT: /root/dev/celeb_img_list.txt
-DATA_TRAIN_STRUCTURE: /root/dev/celeb_mask_list.txt
+DATA_TRAIN_GT: /root/dev/Modified_StructureFlow/flist/images.flist
+DATA_TRAIN_STRUCTURE: /root/dev/Modified_StructureFlow/flist/images.flist
 
 # DATA_VAL_GT: ./txt/places_gt_val.txt
-# DATA_VAL_STRUCTURE: ./txt/places_structure_val.txt
-# DATA_VAL_MASK: ./txt/places_mask_val.txt
+#DATA_VAL_STRUCTURE: ./txt/places_structure_val.txt
+#DATA_VAL_MASK: ./txt/places_mask_val.txt
 
 
-DATA_VAL_GT: /root/dev/celeb_img_list.txt
-DATA_VAL_STRUCTURE: /root/dev/celeb_mask_list.txt
+DATA_TRAIN_GT: /root/dev/Modified_StructureFlow/flist/images.flist
+DATA_TRAIN_STRUCTURE: /root/dev/Modified_StructureFlow/flist/images.flist
 
 
 

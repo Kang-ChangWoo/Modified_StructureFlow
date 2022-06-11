@@ -192,18 +192,20 @@ class StructureFlow():
         self.flow_model.eval()
 
         model = self.config.MODEL
+        print(model)
         print(self.config.DATA_TEST_RESULTS)
         create_dir(self.config.DATA_TEST_RESULTS)
         test_dataset = Dataset(self.config.DATA_TEST_GT, self.config.DATA_TEST_STRUCTURE, self.config, self.config.DATA_TEST_MASK)
-        test_loader = DataLoader(
-            dataset=test_dataset,
-            batch_size=8,
-        )
-
+        test_loader = DataLoader( dataset=test_dataset, batch_size=8)
         index = 0
         with torch.no_grad(): 
             for items in test_loader:
+                
                 inputs, smooths, gts, maps = self.cuda(*items)
+                print(inputs.shape)
+                print(smooths.shape)
+                print(gts.shape)
+                print(maps.shape)
 
                 # structure model
                 if model == 1:
