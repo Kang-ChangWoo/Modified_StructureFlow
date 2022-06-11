@@ -14,6 +14,8 @@
 
 ### 필요한 라이브러리 (Requirements)
 
+( **RTX 3090-24GB** 환경에서 구동하기 위한 설정입니다. )
+
 1. **Pytorch 1.10.1** (modified from Pytorch >= 1.0)
 2. **Python 3.9.5** (modified from Python 3)
 3. **NVIDIA GPU + CUDA 11.3** (modified from NVIDIA GPU + CUDA 9.0)
