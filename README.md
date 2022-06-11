@@ -3,11 +3,14 @@
 - 코드 및 논문은 "[StructureFlow: Image Inpainting via Structure-aware Appearance Flow](https://arxiv.org/abs/1908.03852)" (ICCV 2019) 를 참조합니다.
 
 
+
 ### 예시 결과물 (Inpainting results)
 - 참고를 위한 인페인팅 결과물은 아래와 같습니다.
 <p align='center'>  
   <img src='https://user-images.githubusercontent.com/30292465/62820141-8e634300-bb92-11e9-9895-570f020edc47.png' width='500'/>
 </p>
+
+
 
 ### 필요한 라이브러리 (Requirements)
 
@@ -17,6 +20,8 @@
 4. Tensorboard
 5. Matlab
 6. 그 외 버전에 영향 없는 라이브러리는 필요 시 설치해주시면 됩니다.
+
+
 
 ### 설치법 (Installation)
 
@@ -34,6 +39,7 @@
    cd ./StructureFlow/resample2d_package
    python setup.py install --user
    ```
+
 
 
 ### 구동 (Running)
