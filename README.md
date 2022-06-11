@@ -50,7 +50,7 @@
 
 ### 구동 (Running)
 
-**1.	Image Prepare**
+**1.	이미지 **
 
 We train our model on three public datasets including Places2, Celeba, and Paris StreetView. We use the irregular mask dataset provided by [PConv](https://arxiv.org/abs/1804.07723). You can download these datasets from their project website.
 
@@ -67,7 +67,7 @@ generate_structure_images("path to Places2 dataset root", "path to output folder
 
 Finally, you can generate the image list using script  [`scripts/flist.py`](scripts/flist.py) for training and testing.
 
-**2.	Training**
+**2. 학습 (Training)**
 
 To train our model, modify the model config file [model_config.yaml](model_config.yaml). You may need to change the path of dataset or the parameters of the networks etc. Then run the following code:
 
@@ -77,7 +77,7 @@ python train.py \
 --path=[path save the results] 
 ```
 
-**3.	Testing**
+**3. 평가 (Testing)**
 
 To output the generated results of the inputs, you can use the [test.py](test.py).  Please run the following code:
 
