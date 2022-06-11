@@ -23,7 +23,7 @@
 1. Clone this repository
 
    ```bash
-   git clone https://github.com/RenYurui/StructureFlow
+   git clone [https://github.com/RenYurui/StructureFlow](https://github.com/Kang-ChangWoo/Modified_StructureFlow.git)
    ```
 
 2. Build Gaussian Sampling CUDA package 
