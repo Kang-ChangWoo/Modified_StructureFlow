@@ -11,7 +11,6 @@ def main(mode=None):
         mode : train, test, eval, reads from config file if not specified
     """
 
-    print("cw_mode",mode)
     
     config = load_config(mode)
     config.MODE = mode
