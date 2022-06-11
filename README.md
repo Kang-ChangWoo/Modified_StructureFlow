@@ -52,17 +52,13 @@
 
 **1.	이미지 준비하기**
 
-We train our model on three public datasets including Places2, Celeba, and Paris StreetView. We use the irregular mask dataset provided by. You can download these datasets from their project website.
+기존 선행 연구는 세 가지 공개 데이터셋에서 학습 됐습니다. (Places2, Celeba, and Paris StreetView) 
+또한, 불규칙적 마스킹 데이터는 학습 시에 선행연구 [PConv](https://arxiv.org/abs/1804.07723) 에서 활용되었습니다.
 
-기존 선행 연구는 세 가지 공개 데이터셋에서 학습 됐습니다. (Places2, Celeba, and Paris StreetView) 또한, 불규칙적 마스킹 데이터는 학습 시에 선행연구 [PConv](https://arxiv.org/abs/1804.07723) 에서 활용되었습니다.
+하지만 선행연구 비교를 위해서, 주요하게 아래 두 가지 데이터를 참조하면 됩니다.
 
-
-본 연구에서는 
-
-1. [Places2](http://places2.csail.mit.edu)
-2. [CelebA](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) 
-3. [Paris Street-View](https://github.com/pathak22/context-encoder) 
-4. [Irregular Masks](http://masc.cs.gmu.edu/wiki/partialconv)
+1. [CelebA](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) 
+2. [Irregular Masks](http://masc.cs.gmu.edu/wiki/partialconv)
 
 After downloading the datasets, The edge-preserved smooth images can be obtained by using [RTV smooth method](http://www.cse.cuhk.edu.hk/~leojia/projects/texturesep/). Run generation function [`scripts/matlab/generate_structre_images.m`](scripts/matlab/generate_structure_images.m) in your matlab. For example, if you want to generate smooth images for Places2, you can run the following code:
 
