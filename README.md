@@ -4,6 +4,7 @@
 
 
 ### Inpainting results
+- 참고를 위한 인페인팅 결과물은 아래와 같습니다.
 <p align='center'>  
   <img src='https://user-images.githubusercontent.com/30292465/62820141-8e634300-bb92-11e9-9895-570f020edc47.png' width='500'/>
 </p>
