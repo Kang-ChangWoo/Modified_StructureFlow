@@ -28,7 +28,7 @@
 1. 본 저장소를 클론한다.
 
    ```bash
-   git clone [https://github.com/RenYurui/StructureFlow](https://github.com/Kang-ChangWoo/Modified_StructureFlow.git)
+   git clone https://github.com/Kang-ChangWoo/Modified_StructureFlow.git
    ```
 
 2. 가우시안 샘플링(Gaussian Sampling) 목적의 쿠다(CUDA) 패키지를 빌드한다. 
