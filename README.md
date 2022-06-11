@@ -20,13 +20,13 @@
 
 ### Installation
 
-1. Clone this repository
+1. 본 저장소를 클론한다.
 
    ```bash
    git clone [https://github.com/RenYurui/StructureFlow](https://github.com/Kang-ChangWoo/Modified_StructureFlow.git)
    ```
 
-2. Build Gaussian Sampling CUDA package 
+2. 가우시안 샘플링(Gaussian Sampling) 목적의 쿠다(CUDA) 패키지를 빌드한다. 
 
    (c++ 버전은 기존 c++ 11에서 **c++ 14**로 변경했으며, GPU architecture는 **sm_80, sm_86** 으로 설정했습니다.)
 
