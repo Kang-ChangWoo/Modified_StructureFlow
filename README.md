@@ -2,15 +2,11 @@
 - 본 저장소는 UNIST DGMS 강의 간 진행한 프로젝트에서, 성능 비교를 위해서 재현한 선행연구입니다. 
 - 코드 및 논문은 "[StructureFlow: Image Inpainting via Structure-aware Appearance Flow](https://arxiv.org/abs/1908.03852)" (ICCV 2019) 를 참조합니다.
 
-### Introduction
 
-We propose a two-stage image inpainting network which splits the task into two parts: **structure reconstruction** and **texture generation**. In the ﬁrst stage, edge-preserved smooth images are employed to train a structure reconstructor which completes the missing structures of the inputs. In the second stage, based on the reconstructed structures, a texture generator using appearance ﬂow is designed to yield image details. 
-
+### Inpainting results
 <p align='center'>  
   <img src='https://user-images.githubusercontent.com/30292465/62820141-8e634300-bb92-11e9-9895-570f020edc47.png' width='500'/>
 </p>
-
-*(From left to right) Input corrupted images, reconstructed structure images, visualizations of the appearance ﬂow ﬁelds, ﬁnal output images. To visualize the appearance ﬂow ﬁelds, we plot the sample points of some typical missing regions. The arrows show the direction of the appearance ﬂow.*
 
 ### Requirements
 
