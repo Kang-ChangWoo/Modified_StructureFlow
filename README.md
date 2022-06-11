@@ -54,7 +54,6 @@
 
 기존 선행 연구는 세 가지 공개 데이터셋에서 학습 됐습니다. (Places2, Celeba, and Paris StreetView) 
 또한, 불규칙적 마스킹 데이터는 학습 시에 선행연구 [PConv](https://arxiv.org/abs/1804.07723) 에서 활용되었습니다.
-
 하지만 선행연구 비교를 위해서, 주요하게 아래 두 가지 데이터를 참조하면 됩니다.
 
 1. [CelebA](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) 
