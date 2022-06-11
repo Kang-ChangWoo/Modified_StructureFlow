@@ -50,7 +50,7 @@
 
 ### 구동 (Running)
 
-**1.	이미지 **
+**1.	이미지**
 
 We train our model on three public datasets including Places2, Celeba, and Paris StreetView. We use the irregular mask dataset provided by [PConv](https://arxiv.org/abs/1804.07723). You can download these datasets from their project website.
 
