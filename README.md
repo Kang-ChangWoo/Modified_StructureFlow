@@ -3,13 +3,13 @@
 - 코드 및 논문은 "[StructureFlow: Image Inpainting via Structure-aware Appearance Flow](https://arxiv.org/abs/1908.03852)" (ICCV 2019) 를 참조합니다.
 
 
-### Inpainting results
+### 예시 결과물 Inpainting results
 - 참고를 위한 인페인팅 결과물은 아래와 같습니다.
 <p align='center'>  
   <img src='https://user-images.githubusercontent.com/30292465/62820141-8e634300-bb92-11e9-9895-570f020edc47.png' width='500'/>
 </p>
 
-### Requirements
+### 필요한 라이브러리 Requirements
 
 1. **Pytorch 1.10.1** (modified from Pytorch >= 1.0)
 2. **Python 3.9.5** (modified from Python 3)
@@ -18,7 +18,7 @@
 5. Matlab
 6. 그 외 버전에 영향 없는 라이브러리는 필요 시 설치해주시면 됩니다.
 
-### Installation
+### 설치법 Installation
 
 1. 본 저장소를 클론한다.
 
@@ -36,7 +36,7 @@
    ```
 
 
-### Running
+### 구동 Running
 
 **1.	Image Prepare**
 
