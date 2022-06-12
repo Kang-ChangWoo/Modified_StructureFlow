@@ -108,7 +108,7 @@ python ./scripts/metrics.py \
 --fid_real_path=[path to the real images using to calculate fid]
 ```
 
-**사전에 학습된 모델 가충치는 다음에서 다운로드 받을 수 있습니다.**
+**사전에 학습된 모델 가중치는 다음에서 다운로드 받을 수 있습니다.**
 
 - [Celeba](https://drive.google.com/open?id=1PrLgcEd964etxZcHIOE93uUONB9-b6pI)
 - [Landmark prediction]
