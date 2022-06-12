@@ -1,7 +1,7 @@
 # ModifiedStructureFlow
 - 본 저장소는 UNIST DGMS 강의 간 진행한 프로젝트에서, 성능 비교를 위해서 재현한 선행연구입니다. 
 - 코드 및 논문은 "[StructureFlow: Image Inpainting via Structure-aware Appearance Flow](https://arxiv.org/abs/1908.03852)" (ICCV 2019) 를 참조합니다.
-
+- 원 문서에 대한 설명은 [`origin_repo/README.md`](origin_repo/README.md) 파일에 저장되어 있다.
 
 
 ### 예시 결과물 (Inpainting results)
