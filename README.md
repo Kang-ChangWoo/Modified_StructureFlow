@@ -59,7 +59,7 @@
 1. [CelebA](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) 
 2. [Irregular Masks](http://masc.cs.gmu.edu/wiki/partialconv)
 3. [landmark]
-4. [smooth CelebA](https://drive.google.com/file/d/1Wq9NiX_QNCOx5F223pxvs4Khmi7HT-TF/view?usp=sharing)
+4. [smoothed CelebA](https://drive.google.com/file/d/1Wq9NiX_QNCOx5F223pxvs4Khmi7HT-TF/view?usp=sharing)
 
 데이터셋을 다운로드 받은 이후에, 각 이미지를 가장자리만 남도록 스무딩한 이미지를 [RTV smooth method](http://www.cse.cuhk.edu.hk/~leojia/projects/texturesep/)를 통해 획득해야 합니다. 내장된 [`scripts/matlab/generate_structre_images.m`](scripts/matlab/generate_structure_images.m) 을 matlab을 통해서 실행 시켜서 원하는 데이터를 획득할 수 있습니다. 만약에 celeba 데이터셋의 스무딩 이미지를 얻고 싶다면 아래처럼 입력해야 합니다. (미리 스무딩한 이미지를 위의 (4)번에 공유하니 해당 링크에서 다운로드 해도 됩니다.):
 
