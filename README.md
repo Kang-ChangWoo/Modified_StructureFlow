@@ -73,7 +73,7 @@ generate_structure_images("path to celeba dataset root", "path to output folder"
 
 **2. 학습 (Training)**
 
-모델 학습을 위해서, 설정 파일인 [model_config.yaml](model_config.yaml)를 수정해야 합니다. 데이터셋 경로나 모델의 하이퍼 파라미터를 수정할 수 있습니다. 그 다음엔 아래 코드를 실행시키면 됩니다:
+모델 학습을 위해서, 설정 파일인 [`model_config.yaml`](model_config.yaml)를 수정해야 합니다. 데이터셋 경로나 모델의 하이퍼 파라미터를 수정할 수 있습니다. 그 다음엔 아래 코드를 실행시키면 됩니다:
 
 ```bash
 python train.py \
@@ -85,7 +85,7 @@ python train.py \
 
 **3. 테스트 (Testing)**
 
-입력 데이터에 따른 생성 이미지를 얻고 싶으면, [test.py](test.py) 파일을 실행하면 됩니다.  아래 코드를 실행시키면 됩니다:
+입력 데이터에 따른 생성 이미지를 얻고 싶으면, [`test.py`](test.py) 파일을 실행하면 됩니다.  아래 코드를 실행시키면 됩니다:
 
 ```bash
 python test.py \
@@ -99,7 +99,7 @@ python test.py \
 ```
 
 
-모델 성능을 평가하기 위해선, [./scripts/matric.py](scripts/metrics.py) 파일을 실행하면 됩니다.  해당 스크립트는 PSNR, SSIM and Fréchet Inception Distance ([FID score](https://github.com/mseitzer/pytorch-fid))을 측정합니다.
+모델 성능을 평가하기 위해선, [`./scripts/matric.py`](scripts/metrics.py) 파일을 실행하면 됩니다.  해당 스크립트는 PSNR, SSIM and Fréchet Inception Distance ([FID score](https://github.com/mseitzer/pytorch-fid))을 측정합니다.
 
 ```bash
 python ./scripts/metrics.py \
@@ -111,7 +111,7 @@ python ./scripts/metrics.py \
 **사전에 학습된 모델 가충치는 다음에서 다운로드 받을 수 있습니다.**
 
 - [Celeba](https://drive.google.com/open?id=1PrLgcEd964etxZcHIOE93uUONB9-b6pI)
-- 
+- [Landmark prediction]
 
 (해당 체크포인트를 다운로드 받은 다음에 './path_of_your_experiments/name_of_your_experiment/checkpoints' 위치에 저장합니다.)
 
