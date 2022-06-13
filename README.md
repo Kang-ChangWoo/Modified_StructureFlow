@@ -68,7 +68,7 @@
 - [Celeba](https://drive.google.com/open?id=1PrLgcEd964etxZcHIOE93uUONB9-b6pI)
 
 
-해당 체크포인트를 다운로드 받은 다음에 './path_of_your_experiments/name_of_your_experiment/checkpoints' 위치에 저장합니다.  예를 들어, celeba 체크포인트를 다운 받았다면, '.results/celeba/checkpoints'에 저장한 뒤 아래 코드를 실행하면 됩니다:
+해당 체크포인트를 다운로드 받은 다음에 `./path_of_your_experiments/name_of_your_experiment/checkpoints` 위치에 저장합니다.  예를 들어, celeba 체크포인트를 다운 받았다면, `.results/celeba/checkpoints`에 저장한 뒤 아래 코드를 실행하면 됩니다:
 
 ```bash
 python test.py \
