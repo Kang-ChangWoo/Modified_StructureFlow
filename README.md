@@ -58,7 +58,8 @@
 - [DGSM 평가 데이터](evaluation_dataset/input/000.png)
 
 
-각 이미지를 얻은 다음에는 [`scripts/flist.py`](scripts/flist.py)를 통해 파일 목록을 생성해 학습 및 테스트에 활용해야 합니다.  각 파일을 생성한 다음엔 `
+각 이미지를 얻은 다음에는 [`scripts/flist.py`](scripts/flist.py)를 통해 파일 목록을 생성해 학습 및 테스트에 활용해야 합니다.  각 파일을 생성한 다음엔 `flist/`경로에 각각 저장해주어야 합니다.
+
 
 
 **2. 테스트 (Testing)**
