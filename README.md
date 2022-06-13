@@ -63,6 +63,7 @@
 
 
 **2. 테스트 (Testing)**
+
 사전에 학습된 모델 가중치는 다음에서 다운로드 받을 수 있습니다. 
 
 - [Celeba](https://drive.google.com/open?id=1PrLgcEd964etxZcHIOE93uUONB9-b6pI)
@@ -81,6 +82,7 @@ python test.py \
 --model=3
 ```
 
+**3. 경로 설정해주기**
 
 또한 `config.yaml`파일의 최하단 경로 다섯 개를 생성한 .flist의 경로에 맞게 수정해주어야 합니다.
 - DATA_VAL_GT
