@@ -46,6 +46,7 @@
    python setup.py install --user
    ```
 
+3. 앞서 언급한, 필요한 라이브러리를 설치한다.
 
 
 ### 구동 (Running)
